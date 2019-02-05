@@ -8,7 +8,7 @@ import 'normalize.css'
 import './scss/main.scss'
 
 const client = new ApolloClient({
-  uri: "http://localhost:8080"
+  uri: "https://api.chrisgrice.com/graphql"
 })
 
 ReactDOM.render(

@@ -1,0 +1,41 @@
+@import "variables";
+
+.badge {
+    display: inline-block;
+    padding: .1rem .25rem;
+    font-size: 0.8em;
+    margin-right: $gutter-size;
+    border: 1px solid $color-base;
+    border-radius: $border-radius;
+    color: $color-text-base;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 800;
+    line-height: 1.2rem;
+    text-align: center;
+    min-width: 3rem;
+}
+
+.badge-info {
+    background-color: $color-base-light;
+    border-color: $color-base-light;
+    color: $color-text-secondary;
+}
+
+.badge-primary {
+    background-color: $color-primary;
+    color: $color-text-secondary;
+    border-color: $color-primary;
+}
+
+.badge-success {
+    background-color: $color-success;
+    color: $color-text-secondary;
+    border-color: $color-success;
+}
+
+.badge-warning {
+    background-color: $color-warning;
+    color: $color-text-secondary;
+    border-color: $color-warning;
+}

@@ -17,15 +17,25 @@
     flex: 1 1 auto;
 }
 
+.c_postslistitem_status {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.c_postlistitem_posttype {
+    font-size: 0.8em;
+    color: $color-base-light;
+}
+
 .c_postslistitem_title {
     display: block;
     font-size: 1.2em;
     margin-bottom: $gutter-size;
+    font-weight: 700;
 }
 
 .c_postslistitem_published {
-    display: block;
     font-size: 0.8em;
-    margin-bottom: $gutter-size;
     color: $color-base-light;
 }
