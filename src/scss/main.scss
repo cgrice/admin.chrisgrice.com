@@ -1,0 +1,10 @@
+// @import "typography";
+@import "variables";
+@import "layout";
+@import "buttons";
+@import "components/posts.scss";
+
+body {
+    font-family: $base-font-stack;
+    background-color: $color-secondary;
+}

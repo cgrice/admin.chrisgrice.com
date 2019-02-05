@@ -1,0 +1,31 @@
+.c_postslist {
+    width: 100%;
+}
+
+.c_postslistitem {
+    display: flex;
+    border-bottom: 1px solid $color-separator;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    border-radius: $border-radius;
+    padding: $gutter-size;
+    margin-bottom: $gutter-size;
+}
+
+.c_postslistitem_info {
+    flex: 1 1 auto;
+}
+
+.c_postslistitem_title {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: $gutter-size;
+}
+
+.c_postslistitem_published {
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: $gutter-size;
+    color: $color-base-light;
+}
