@@ -1,0 +1,29 @@
+@import "variables";
+
+.button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 1px solid $color-base;
+    margin: $gutter-size;
+    margin-right: 0;
+    border-radius: $border-radius;
+    color: $color-text-base;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.button-small {
+    font-size: 0.5em;
+}
+
+.button-primary {
+    background-color: $color-primary;
+    color: $color-text-secondary;
+    border-color: $color-primary;
+}
+
+.button-destructive {
+    background-color: $color-warning;
+    color: $color-text-secondary;
+    border-color: $color-warning;
+}
