@@ -2,11 +2,11 @@
 
 .badge {
     display: inline-block;
-    padding: .1rem .25rem;
+    padding: .1rem .5rem;
     font-size: 0.8em;
     margin-right: $gutter-size;
-    border: 1px solid $color-base;
-    border-radius: $border-radius;
+    border: 2px solid $color-base;
+    border-radius: 1em;
     color: $color-text-base;
     cursor: pointer;
     background-color: transparent;
@@ -17,25 +17,25 @@
 }
 
 .badge-info {
-    background-color: $color-base-light;
+    // background-color: $color-base-light;
     border-color: $color-base-light;
-    color: $color-text-secondary;
+    color: $color-base-light;
 }
 
 .badge-primary {
-    background-color: $color-primary;
-    color: $color-text-secondary;
+    // background-color: $color-primary;
+    color: $color-primary;
     border-color: $color-primary;
 }
 
 .badge-success {
-    background-color: $color-success;
-    color: $color-text-secondary;
+    // background-color: $color-success;
+    color: $color-success;
     border-color: $color-success;
 }
 
 .badge-warning {
-    background-color: $color-warning;
-    color: $color-text-secondary;
+    // background-color: $color-warning;
+    color: $color-warning;
     border-color: $color-warning;
 }
