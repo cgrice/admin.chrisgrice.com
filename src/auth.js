@@ -1,4 +1,6 @@
 import auth0 from 'auth0-js';
+import { setContext } from 'apollo-link-context'
+
 
 const redirectUri = process.env.REACT_APP_HOSTED_URI
 const clientID = process.env.REACT_APP_AUTH_CLIENT_ID
@@ -75,6 +77,20 @@ class Auth {
   }
 }
 
-const auth = new Auth();
+const createAuthLink = (token) => setContext((_, { headers }) => {
+  // return the headers to the context so httpLink can read them
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : "",
+    }
+  }
+})
 
-export default auth;
+const auth = new Auth()
+
+export default auth
+
+export {
+  createAuthLink,
+}
